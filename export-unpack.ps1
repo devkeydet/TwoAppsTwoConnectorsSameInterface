@@ -2,6 +2,7 @@ $exportTemp = "export-temp"
 $solutionName = "TwoAppsTwoConnectorsSameInterface"
 $unpackFolder = "src/$solutionName/unpacked-solution"
 
+pac solution publish
 pac solution export --name $solutionName --path $exportTemp
 pac solution unpack --zipfile "$exportTemp/$solutionName.zip" --folder $unpackFolder --allowDelete true
 

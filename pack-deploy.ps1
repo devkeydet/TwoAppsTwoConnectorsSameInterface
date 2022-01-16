@@ -9,5 +9,5 @@ foreach ($msappDirectory in $msappDirectories) {
 }
 $zipfile = "$pacTemp/$solutionName.zip"
 pac solution pack --zipfile $zipfile --folder $unpackFolder
-pac solution import --path $zipfile
-pac solution publish
+#pac solution import --path $zipfile
+#pac solution publish
