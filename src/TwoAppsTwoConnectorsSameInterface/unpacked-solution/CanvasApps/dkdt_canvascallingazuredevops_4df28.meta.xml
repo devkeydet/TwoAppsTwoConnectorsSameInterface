@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <CanvasApp xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <Name>dkdt_canvascallingazuredevops_4df28</Name>
-  <AppVersion>2022-01-16T11:19:35Z</AppVersion>
+  <AppVersion>2022-01-16T11:39:12Z</AppVersion>
   <Status>Ready</Status>
   <CreatedByClientVersion>3.21115.37.0</CreatedByClientVersion>
   <MinClientVersion>3.21115.37.0</MinClientVersion>
-  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","sienaVersion":"aced5dd9-e65d-4c0d-9a70-cac0b708aac8","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.21115.37","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
+  <Tags>{"primaryDeviceWidth":"1366","primaryDeviceHeight":"768","sienaVersion":"b972923a-8684-4d3a-b131-a8be6da44719","deviceCapabilities":"","supportsPortrait":"true","supportsLandscape":"true","primaryFormFactor":"Tablet","publisherVersion":"3.21115.37","minimumRequiredApiVersion":"2.2.0","hasComponent":"false","hasUnlockedComponent":"false","isUnifiedRootApp":"false"}</Tags>
   <IsCdsUpgraded>0</IsCdsUpgraded>
   <GalleryItemId xsi:nil="true"></GalleryItemId>
   <BackgroundColor>RGBA(0,176,240,1)</BackgroundColor>
   <DisplayName>CanvasCallingAzureDevOps</DisplayName>
-  <Description></Description>
-  <CommitMessage></CommitMessage>
+  <Description xsi:nil="true"></Description>
+  <CommitMessage xsi:nil="true"></CommitMessage>
   <Publisher></Publisher>
   <AuthorizationReferences>[]</AuthorizationReferences>
-  <ConnectionReferences>{"56de2c15-d76e-4089-811e-348eeea706ab":{"id":"/providers/Microsoft.PowerApps/apis/shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb","displayName":"AzureDevOpsCustomConnectorTest","iconUri":"https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png","dataSources":["AlmCustomConnector"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["ListRepos"],"customApiLogicalName":"dkdt_5Fazuredevopscustomconnectortest","isCustomApiSolutionAware":true}}</ConnectionReferences>
+  <ConnectionReferences>{"56de2c15-d76e-4089-811e-348eeea706ab":{"id":"/providers/microsoft.powerapps/apis/shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb","displayName":"AzureDevOpsCustomConnectorTest","iconUri":"https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png","dataSources":["AlmCustomConnector"],"dependencies":[],"dependents":[],"parameterHints":{},"parameterHintsV2":{},"isOnPremiseConnection":false,"bypassConsent":false,"dataSets":{},"apiTier":"Standard","actions":["ListRepos"],"customApiLogicalName":"dkdt_5Fazuredevopscustomconnectortest","isCustomApiSolutionAware":true}}</ConnectionReferences>
   <DatabaseReferences>{}</DatabaseReferences>
   <AppComponents>[]</AppComponents>
   <AppComponentDependencies>[]</AppComponentDependencies>
@@ -24,7 +24,7 @@
   <AdminControlBypassConsent>0</AdminControlBypassConsent>
   <EmbeddedApp xsi:nil="true"></EmbeddedApp>
   <IntroducedVersion>1.0</IntroducedVersion>
-  <CdsDependencies>{"cdsdependencies":[{"componenttype":372,"logicalname":"dkdt_5Fazuredevopscustomconnectortest","componenttypeplatformname":"connector"}]}</CdsDependencies>
+  <CdsDependencies>{"cdsdependencies":[{"logicalname":"dkdt_5Fazuredevopscustomconnectortest","componenttype":372,"componenttypeplatformname":"connector"}]}</CdsDependencies>
   <IsCustomizable>1</IsCustomizable>
   <BackgroundImageUri>/CanvasApps/dkdt_canvascallingazuredevops_4df28_BackgroundImageUri</BackgroundImageUri>
   <DocumentUri>/CanvasApps/dkdt_canvascallingazuredevops_4df28_DocumentUri.msapp</DocumentUri>

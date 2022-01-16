@@ -45,3 +45,8 @@ MainScreen As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
+    lblTestCodeCopy As label:
+        Text: ="Code Copy"
+        X: =1216
+        ZIndex: =2
+
