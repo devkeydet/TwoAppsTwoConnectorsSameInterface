@@ -1,0 +1,32 @@
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://unitedstates-002.azure-apim.net/apim/dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="Defaulttitle" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="Default title"></doc>
+  <grammars>
+    <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+      <string name="ListRepos_responses_default_def_items_def_name_def" />
+      <object name="ListRepos_responses_default_def_items_def">
+        <property name="name" type="string" />
+      </object>
+      <array typeRef="ListRepos_responses_default_def_items_def" name="ListRepos_responses_default_def" />
+    </jsonTypes>
+  </grammars>
+  <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://unitedstates-002.azure-apim.net/apim/dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb">
+    <resource path="/{connectionId}/marcsc-marcsc/sandbox/_apis/git/repositories">
+      <param style="template" name="connectionId" type="xs:string" required="true" />
+      <method siena:requiresAuthentication="true" name="GET" id="ListRepos" siena:isDeprecated="false">
+        <doc title="ListRepos&#xA;ListRepos" />
+        <request />
+        <response>
+          <representation mediaType="application/json" element="service:ListRepos_responses_default_def" />
+        </response>
+      </method>
+    </resource>
+  </resources>
+  <authenticationProviders xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <connectionProvider id="PowerAppAuth" siena:connectionProviderId="shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb" />
+  </authenticationProviders>
+  <template xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
+    <variable name="connectionId">
+      <modifyParams style="template" name="connectionId" attribute="fixed" />
+    </variable>
+  </template>
+</application>

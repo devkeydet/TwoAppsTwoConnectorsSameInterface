@@ -1,0 +1,14 @@
+{
+  "token": {
+    "oAuthSettings": {
+      "clientId": "@environmentVariables(\"dkdt_gh_clientid\")",
+      "clientSecret": "@environmentVariables(\"dkdt_gh_clientsecret\")",
+      "customParameters": {},
+      "identityProvider": "github",
+      "redirectMode": "Global",
+      "scopes": []
+    },
+    "type": "oAuthSetting",
+    "uiDefinition": null
+  }
+}

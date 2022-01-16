@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>9789067a-3b34-4d4a-b90d-f92e7ee16861</connectorid>
+  <description></description>
+  <displayname>AzureDevOpsCustomConnectorTest</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>dkdt_5Fazuredevopscustomconnectortest</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/dkdt_5Fazuredevopscustomconnectortest_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/dkdt_5Fazuredevopscustomconnectortest_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/dkdt_5Fazuredevopscustomconnectortest_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/dkdt_5Fazuredevopscustomconnectortest_iconblob.Png</iconblob>
+</Connector>

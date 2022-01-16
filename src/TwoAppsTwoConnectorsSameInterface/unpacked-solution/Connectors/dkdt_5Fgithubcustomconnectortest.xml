@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Connector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <connectorid>c32f3bbb-580b-4691-bb41-9ae3c88d1ff4</connectorid>
+  <description></description>
+  <displayname>GitHubCustomConnectorTest</displayname>
+  <iconbrandcolor>#007ee5</iconbrandcolor>
+  <name>dkdt_5Fgithubcustomconnectortest</name>
+  <connectortype>1</connectortype>
+  <openapidefinition>/Connector/dkdt_5Fgithubcustomconnectortest_openapidefinition.json</openapidefinition>
+  <connectionparameters>/Connector/dkdt_5Fgithubcustomconnectortest_connectionparameters.json</connectionparameters>
+  <policytemplateinstances>/Connector/dkdt_5Fgithubcustomconnectortest_policytemplateinstances.json</policytemplateinstances>
+  <iconblob>/Connector/dkdt_5Fgithubcustomconnectortest_iconblob.Png</iconblob>
+</Connector>

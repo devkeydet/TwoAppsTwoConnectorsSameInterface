@@ -1,0 +1,60 @@
+{
+  "basePath": "/",
+  "consumes": [],
+  "definitions": {},
+  "host": "dev.azure.com",
+  "info": {
+    "description": "",
+    "title": "Default title",
+    "version": "1.0"
+  },
+  "parameters": {},
+  "paths": {
+    "/marcsc-marcsc/sandbox/_apis/git/repositories": {
+      "get": {
+        "description": "ListRepos",
+        "operationId": "ListRepos",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "description": "name",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "ListRepos"
+      }
+    }
+  },
+  "produces": [],
+  "responses": {},
+  "schemes": [
+    "https"
+  ],
+  "security": [
+    {
+      "undefined": []
+    }
+  ],
+  "securityDefinitions": {
+    "undefined": {
+      "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
+      "flow": "accessCode",
+      "scopes": {},
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "type": "oauth2"
+    }
+  },
+  "swagger": "2.0",
+  "tags": []
+}

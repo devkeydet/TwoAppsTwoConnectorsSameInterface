@@ -1,0 +1,8 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb",
+    "Name": "AlmCustomConnector",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo"
+  }
+]

@@ -1,0 +1,60 @@
+{
+  "basePath": "/",
+  "consumes": [],
+  "definitions": {},
+  "host": "api.github.com",
+  "info": {
+    "description": "",
+    "title": "Default title",
+    "version": "1.0"
+  },
+  "parameters": {},
+  "paths": {
+    "/user/repos": {
+      "get": {
+        "description": "ListRepos",
+        "operationId": "ListRepos",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "description": "name",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "ListRepos"
+      }
+    }
+  },
+  "produces": [],
+  "responses": {},
+  "schemes": [
+    "https"
+  ],
+  "security": [
+    {
+      "oauth2_auth": []
+    }
+  ],
+  "securityDefinitions": {
+    "oauth2_auth": {
+      "authorizationUrl": "https://github.com/login/oauth/authorize",
+      "flow": "accessCode",
+      "scopes": {},
+      "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
+      "type": "oauth2"
+    }
+  },
+  "swagger": "2.0",
+  "tags": []
+}

@@ -1,0 +1,27 @@
+{
+  "token": {
+    "oAuthSettings": {
+      "clientId": "@environmentVariables(\"dkdt_ado_clientid\")",
+      "clientSecret": "@environmentVariables(\"dkdt_ado_clientsecret\")",
+      "customParameters": {
+        "EnableOnbehalfOfLogin": {
+          "value": false
+        },
+        "LoginUri": {
+          "value": "https://login.windows.net"
+        },
+        "ResourceUri": {
+          "value": "499b84ac-1321-427f-aa17-267ca6975798"
+        },
+        "TenantId": {
+          "value": "common"
+        }
+      },
+      "identityProvider": "aad",
+      "redirectMode": "Global",
+      "scopes": []
+    },
+    "type": "oAuthSetting",
+    "uiDefinition": null
+  }
+}
