@@ -35,11 +35,57 @@
         "summary": "ListOrganizations"
       }
     },
-    "/marcsc-marcsc/sandbox/_apis/git/repositories": {
+    "/marcsc-marcsc/sandbox/_apis/git/repositories": {},
+    "/{organization}/_apis/projects": {
+      "get": {
+        "description": "ListProjects",
+        "operationId": "ListProjects",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "organization",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "description": "name",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "ListProjects"
+      }
+    },
+    "/{organization}/{project}/_apis/git/repositories": {
       "get": {
         "description": "ListRepos",
         "operationId": "ListRepos",
-        "parameters": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "organization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "path",
+            "name": "project",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "default": {
             "description": "default",
@@ -68,11 +114,11 @@
   ],
   "security": [
     {
-      "undefined": []
+      "oauth2_auth": []
     }
   ],
   "securityDefinitions": {
-    "undefined": {
+    "oauth2_auth": {
       "authorizationUrl": "https://login.windows.net/common/oauth2/authorize",
       "flow": "accessCode",
       "scopes": {},

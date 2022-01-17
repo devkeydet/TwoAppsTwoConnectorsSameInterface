@@ -1,11 +1,23 @@
 MainScreen As screen:
+    Fill: =
+    OnVisible: |-
+        =If(
+            mainScreenFirstLoad,
+            Select(btnRefreshOrganizations);
+            Set(
+                mainScreenFirstLoad,
+                false
+            )
+        )
 
     "RepoGallery As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        Height: =768
-        Items: =AlmCustomConnector.ListRepos()
+        Height: =728
+        Items: =AlmCustomConnector.ListRepos(drpOrganizations.Selected.name,drpProjects.Selected.name)
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =Min(96, Self.Height - 60)
+        X: =726
+        Y: =40
         ZIndex: =1
 
         Title2 As label:
@@ -49,4 +61,20 @@ MainScreen As screen:
         Text: ="Code Copy"
         X: =1216
         ZIndex: =2
+
+    drpOrganizations As dropdown:
+        Items: =OrganizationsTable
+        ZIndex: =3
+
+    drpProjects As dropdown:
+        Items: =AlmCustomConnector.ListProjects(drpOrganizations.Selected.name)
+        Y: =40
+        ZIndex: =4
+
+    btnRefreshOrganizations As button:
+        OnSelect: =Set(OrganizationsTable, AlmCustomConnector.ListOrganizations())
+        Text: ="Refresh"
+        Width: =103
+        X: =328
+        ZIndex: =5
 

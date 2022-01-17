@@ -6,7 +6,9 @@
       "customParameters": {},
       "identityProvider": "github",
       "redirectMode": "Global",
-      "scopes": []
+      "scopes": [
+        "repo"
+      ]
     },
     "type": "oAuthSetting",
     "uiDefinition": null

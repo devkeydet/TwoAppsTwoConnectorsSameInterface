@@ -1,5 +1,5 @@
 {
-  "56de2c15-d76e-4089-811e-348eeea706ab": {
+  "47351d04-59b8-4c7d-83c5-e7ceb2591366": {
     "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb/connections/e25c918c-9adb-4328-bcf2-efda-5101bc5a",
     "connectionParameters": {
       "sku": "Enterprise"
@@ -19,6 +19,6 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "56de2c15-d76e-4089-811e-348eeea706ab"
+    "id": "47351d04-59b8-4c7d-83c5-e7ceb2591366"
   }
 }

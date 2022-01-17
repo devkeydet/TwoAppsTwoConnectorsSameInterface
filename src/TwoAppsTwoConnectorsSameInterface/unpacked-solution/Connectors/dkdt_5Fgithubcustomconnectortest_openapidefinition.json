@@ -10,11 +10,24 @@
   },
   "parameters": {},
   "paths": {
-    "/user/repos": {
+    "/orgs/{organization}/repos": {
       "get": {
         "description": "ListRepos",
         "operationId": "ListRepos",
-        "parameters": [],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "organization",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "header",
+            "name": "project",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "default": {
             "description": "default",
@@ -34,6 +47,64 @@
         },
         "summary": "ListRepos"
       }
+    },
+    "/user/orgs": {
+      "get": {
+        "description": "ListOrganizations",
+        "operationId": "ListOrganizations",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "description": "name",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "ListOrganizations"
+      }
+    },
+    "/user/repos": {},
+    "/{organization}/fake": {
+      "get": {
+        "description": "ListProjects",
+        "operationId": "ListProjects",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "organization",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "description": "name",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "ListProjects"
+      }
     }
   },
   "produces": [],
@@ -43,14 +114,18 @@
   ],
   "security": [
     {
-      "oauth2_auth": []
+      "oauth2_auth": [
+        "repo"
+      ]
     }
   ],
   "securityDefinitions": {
     "oauth2_auth": {
       "authorizationUrl": "https://github.com/login/oauth/authorize",
       "flow": "accessCode",
-      "scopes": {},
+      "scopes": {
+        "repo": "repo"
+      },
       "tokenUrl": "https://login.windows.net/common/oauth2/authorize",
       "type": "oauth2"
     }

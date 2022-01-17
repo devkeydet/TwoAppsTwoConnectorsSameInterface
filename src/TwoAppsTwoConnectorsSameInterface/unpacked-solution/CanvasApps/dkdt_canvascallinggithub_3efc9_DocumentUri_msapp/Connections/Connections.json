@@ -1,14 +1,14 @@
 {
-  "18516dfd-ad1f-407d-ad9b-9895921df5a0": {
-    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_dkdt-5fgithubcustomconnectortest-5f49fcd9bb6b3da2fb/connections/34fbde94-d78c-48be-ad58-b41c-f5b056d9",
+  "47351d04-59b8-4c7d-83c5-e7ceb2591366": {
+    "connectionInstanceId": "/providers/microsoft.powerapps/apis/shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb/connections/e25c918c-9adb-4328-bcf2-efda-5101bc5a",
     "connectionParameters": {
       "sku": "Enterprise"
     },
     "connectionRef": {
       "apiTier": "Standard",
-      "displayName": "GitHubCustomConnectorTest",
+      "displayName": "AzureDevOpsCustomConnectorTest",
       "iconUri": "https://az787822.vo.msecnd.net/defaulticons/api-dedicated.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_dkdt-5fgithubcustomconnectortest-5f49fcd9bb6b3da2fb",
+      "id": "/providers/microsoft.powerapps/apis/shared_dkdt-5fazuredevopscustomconnectortest-5f49fcd9bb6b3da2fb",
       "isCustomApiConnection": true,
       "parameterHints": {},
       "parameterHintsV2": {}
@@ -19,6 +19,6 @@
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "18516dfd-ad1f-407d-ad9b-9895921df5a0"
+    "id": "47351d04-59b8-4c7d-83c5-e7ceb2591366"
   }
 }
