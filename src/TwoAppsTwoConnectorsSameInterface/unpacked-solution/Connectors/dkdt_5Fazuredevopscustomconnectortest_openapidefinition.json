@@ -35,6 +35,28 @@
         "summary": "ListOrganizations"
       }
     },
+    "/fake": {
+      "get": {
+        "description": "GetConnectorInfo",
+        "operationId": "GetConnectorInfo",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "properties": {
+                "name": {
+                  "description": "name",
+                  "type": "string"
+                }
+              },
+              "type": "object"
+            }
+          }
+        },
+        "summary": "GetConnectorInfo"
+      }
+    },
     "/marcsc-marcsc/sandbox/_apis/git/repositories": {},
     "/{organization}/_apis/projects": {
       "get": {
