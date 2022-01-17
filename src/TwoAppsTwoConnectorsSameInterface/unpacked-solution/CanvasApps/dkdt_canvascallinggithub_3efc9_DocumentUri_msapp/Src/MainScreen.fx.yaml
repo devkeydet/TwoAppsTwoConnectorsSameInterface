@@ -2,10 +2,10 @@ MainScreen As screen:
     Fill: =
     OnVisible: |-
         =If(
-            mainScreenFirstLoad,
+            gblMainScreenFirstLoad,
             Select(btnRefreshOrganizations);
             Set(
-                mainScreenFirstLoad,
+                gblMainScreenFirstLoad,
                 false
             )
         )
@@ -57,17 +57,13 @@ MainScreen As screen:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-    lblTestCodeCopy As label:
-        Text: ="Code Copy"
-        X: =1216
-        ZIndex: =2
-
     drpOrganizations As dropdown:
         Items: =OrganizationsTable
         ZIndex: =3
 
     drpProjects As dropdown:
         Items: =AlmCustomConnector.ListProjects(drpOrganizations.Selected.name)
+        Visible: =If(gblAlmConnectorType = "ADO",true,false)
         Y: =40
         ZIndex: =4
 

@@ -4,17 +4,16 @@
     "App": 1,
     "btnRefreshOrganizations": 5,
     "drpOrganizations": 4,
-    "drpProjects": 7,
-    "galleryTemplate1": 9,
-    "lblTestCodeCopy": 6,
+    "drpProjects": 6,
+    "galleryTemplate1": 8,
     "MainScreen": 3,
-    "NextArrow2": 10,
-    "RepoGallery": 8,
-    "Separator2": 12,
-    "Title2": 11
+    "NextArrow2": 9,
+    "RepoGallery": 7,
+    "Separator2": 11,
+    "Title2": 10
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "01/17/2022 16:51:24",
+  "HeaderLastSavedDateTimeUTC": "01/17/2022 17:45:07",
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
@@ -30,41 +29,40 @@
   "OrderXMLTemplate": {
     "button": 1,
     "dropdown": 0,
-    "gallery": 3,
-    "icon": 4,
-    "label": 2,
+    "gallery": 2,
+    "icon": 3,
+    "label": 4,
     "rectangle": 5
   },
   "PublishOrderIndices": {
     "App": 0,
     "btnRefreshOrganizations": 1,
     "drpOrganizations": 0,
-    "drpProjects": 3,
-    "galleryTemplate1": 5,
-    "lblTestCodeCopy": 2,
+    "drpProjects": 2,
+    "galleryTemplate1": 4,
     "MainScreen": 0,
-    "NextArrow2": 6,
-    "RepoGallery": 4,
-    "Separator2": 8,
-    "Title2": 7
+    "NextArrow2": 5,
+    "RepoGallery": 3,
+    "Separator2": 7,
+    "Title2": 6
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
   },
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1427882,
+    "AnalysisLoadTime": 0.1306129,
     "ControlCount": {
       "button": 1,
       "dropdown": 2,
       "gallery": 1,
       "galleryTemplate": 1,
       "icon": 1,
-      "label": 2,
+      "label": 1,
       "rectangle": 1,
-      "screen": 2
+      "screen": 1
     },
-    "DeserializationLoadTime": 1.503711,
+    "DeserializationLoadTime": 2.0893879000000002,
     "ErrorCount": 0
   }
 }

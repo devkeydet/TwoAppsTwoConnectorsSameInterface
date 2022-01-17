@@ -1,5 +1,7 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =Set(mainScreenFirstLoad, true)
+    OnStart: |-
+        =Set(gblMainScreenFirstLoad, true);
+        Set(gblAlmConnectorType, AlmCustomConnector.GetConnectorInfo().name);
     StartScreen: =
 
