@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "Parameters": {
+      "x-ms-apimTemplate-operationName": [
+        "ListOrganizations"
+      ],
+      "x-ms-apimTemplateParameter.urlTemplate": "https://app.vssps.visualstudio.com"
+    },
+    "TemplateId": "dynamichosturl",
+    "Title": "Set host URL (ListOrganizations)",
+    "Type": null
+  }
+]

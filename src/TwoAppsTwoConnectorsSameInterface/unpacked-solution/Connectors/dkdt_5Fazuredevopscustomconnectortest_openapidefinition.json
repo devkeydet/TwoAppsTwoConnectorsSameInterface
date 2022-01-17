@@ -10,6 +10,31 @@
   },
   "parameters": {},
   "paths": {
+    "/_apis/accounts": {
+      "get": {
+        "description": "ListOrganizations",
+        "operationId": "ListOrganizations",
+        "parameters": [],
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {
+              "items": {
+                "properties": {
+                  "name": {
+                    "description": "name",
+                    "type": "string"
+                  }
+                },
+                "type": "object"
+              },
+              "type": "array"
+            }
+          }
+        },
+        "summary": "ListOrganizations"
+      }
+    },
     "/marcsc-marcsc/sandbox/_apis/git/repositories": {
       "get": {
         "description": "ListRepos",
