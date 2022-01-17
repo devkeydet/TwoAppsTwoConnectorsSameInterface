@@ -2,18 +2,14 @@
   "ComponentIndexes": {},
   "ControlUniqueIds": {
     "App": 1,
-    "btnRefreshOrganizations": 5,
-    "drpOrganizations": 4,
-    "drpProjects": 7,
-    "galleryTemplate1": 9,
-    "MainScreen": 3,
-    "NextArrow2": 10,
-    "RepoGallery": 8,
-    "Separator2": 12,
-    "Title2": 11
+    "drpOrganizations": 19,
+    "drpProjects": 18,
+    "drpRepos": 17,
+    "MainContainer": 16,
+    "MainScreen": 3
   },
   "FunctionParamsInvariantScripts": {},
-  "HeaderLastSavedDateTimeUTC": "01/17/2022 17:34:49",
+  "HeaderLastSavedDateTimeUTC": "01/17/2022 21:46:47",
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {},
   "LocalResourceRootPaths": {},
@@ -27,42 +23,29 @@
   "OrderGroupControls": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 1,
-    "dropdown": 0,
-    "gallery": 2,
-    "icon": 3,
-    "label": 4,
-    "rectangle": 5
+    "dropdown": 1,
+    "groupContainer": 0
   },
   "PublishOrderIndices": {
     "App": 0,
-    "btnRefreshOrganizations": 1,
-    "drpOrganizations": 0,
+    "drpOrganizations": 1,
     "drpProjects": 2,
-    "galleryTemplate1": 4,
-    "MainScreen": 0,
-    "NextArrow2": 5,
-    "RepoGallery": 3,
-    "Separator2": 7,
-    "Title2": 6
+    "drpRepos": 3,
+    "MainContainer": 0,
+    "MainScreen": 0
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
   },
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.18420329999999999,
+    "AnalysisLoadTime": 0.096245600000000001,
     "ControlCount": {
       "button": 1,
-      "dropdown": 2,
-      "gallery": 1,
-      "galleryTemplate": 1,
-      "icon": 1,
-      "label": 2,
-      "rectangle": 1,
+      "dropdown": 6,
       "screen": 1
     },
-    "DeserializationLoadTime": 1.1124232000000001,
-    "ErrorCount": 0
+    "DeserializationLoadTime": 0.33486250000000001,
+    "ErrorCount": 1
   }
 }
